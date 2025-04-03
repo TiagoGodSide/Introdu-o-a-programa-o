@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-</head><h3>Formulário de contato</h3>
+</head>
 <style>
     body{background-color: rgb(48, 71, 107);}
 </style>
 <body>
-    <form action="/enviar" method="post">
-        <label for="Nome"> Nome</label>
-        <input type="text">
-        <br>
-        <label for="E-mail">E-mail</label>
-        <input type="email">
-        <br>
-        <label for="Mensagem">Mensagem</label>
-        <textarea name="Mensagem" id="Mensagem" rows="4" cols="40" ></textarea>
-        <br>
-        <input type="submit">
-        
-
-    </form>
+    <Header>
+        <h3>Formulário de contato</h3>
+    </Header>
+   <main>
+        <form action="/enviar" method="post">
+            <label for="Nome"> Nome</label>
+            <input type="text">
+            <br>
+            <label for="E-mail">E-mail</label>
+            <input type="email">
+            <br>
+            <label for="Mensagem">Mensagem</label>
+            <textarea name="Mensagem" id="Mensagem" rows="4" cols="40" ></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </main>
 </body>
 </html>
