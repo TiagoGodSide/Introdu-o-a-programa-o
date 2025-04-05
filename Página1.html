@@ -4,13 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educação</title>
+    <style>
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  float: left;
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+.menu ul li:hover .dropdown-content {
+  display: block;
+}
+
+    </style>
 </head>
 <body>
-    <h3>Educação física</h3>
-    <header>Página para discusão e aprendizagem em educação física
-        <nav>Realmente não sei o que fazer aqui</nav>
-    </header>
-    <main><a href=""></a></main>
+   <main>
+    <nav class="menu">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li class="dropdown">
+            <a href="#">Produtos</a>
+            <div class="dropdown-content">
+              <a href="#">Produto 1</a>
+              <a href="#">Produto 2</a>
+              <a href="#">Produto 3</a>
+            </div>
+          </li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+   </main>
     
     
 </body>

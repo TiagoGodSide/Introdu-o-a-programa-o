@@ -40,3 +40,12 @@ header{
     height: 200px;
     overflow: scroll;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(225, 235, 235);
+    text-align: center;
+    padding: 5px;
+}

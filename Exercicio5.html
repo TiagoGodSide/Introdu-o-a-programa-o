@@ -4,27 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+.Botao{cursor: auto;}
+    </style>
 </head>
 <style>
     body{background-color: rgb(48, 71, 107);}
+    .menu{
+        display: flex;
+        flex-direction: row;
+        float: left;
+        color: aqua;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .principal{
+        flex: 1;
+        background: white;
+    }
+    footer{
+        background-color: antiquewhite;
+        border: 1;
+        padding: 15px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 </style>
 <body>
-    <Header>
-        <h3>Formulário de contato</h3>
-    </Header>
-   <main>
-        <form action="/enviar" method="post">
-            <label for="Nome"> Nome</label>
-            <input type="text">
-            <br>
-            <label for="E-mail">E-mail</label>
-            <input type="email">
-            <br>
-            <label for="Mensagem">Mensagem</label>
-            <textarea name="Mensagem" id="Mensagem" rows="4" cols="40" ></textarea>
-            <br>
-            <input type="submit">
-        </form>
-    </main>
+    <div class="container">
+        <Header>
+           <nav class="Menu">    
+                <div>
+                    <h4>Início</h4>
+                    <h4>Sobre</h4>
+                    <h4>contato</h4>
+                </div>
+            </nav>
+        </Header>
+        <main>
+            <div> 
+                <h3>Formulário de contato</h3>
+            </div>
+            <div class="principal">
+                <form action="/enviar" method="post">
+                    <label for="Nome"> Nome</label>
+                    <input type="text">
+                    <br>
+                    <label for="E-mail">E-mail</label>
+                    <input type="email">
+                    <br>
+                    <label for="Mensagem">Mensagem</label><br>
+                    <textarea name="Mensagem" id="Mensagem" rows="4" cols="40" placeholder="Digite aqui sua mensagem"></textarea>
+                    <br>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" placeholder="Digite sua senha"><br>
+                    <div class="Botao">
+                    <input type="submit">
+                </form>
+            </div>
+        </main>
+        <footer>&copy;2025 Tiago Cesar</footer>
+    </div>
+    
 </body>
 </html>
