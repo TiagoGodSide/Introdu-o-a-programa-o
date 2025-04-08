@@ -20,45 +20,61 @@
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #333;
+  color: #5a2323;
 }
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #776363;
   min-width: 160px;
   z-index: 1;
 }
 
 .dropdown-content a {
-  display: block;
+  display: flex;
   padding: 10px 20px;
   text-decoration: none;
-  color: #333;
+  color: #3d3333;
 }
 .menu ul li:hover .dropdown-content {
   display: block;
 }
-
+button:hover{
+  background-color: rgb(148, 109, 50);
+  border-radius: 10%;
+  padding: 10px 20px; 
+  
+}
+button{
+  background-color: #A9A9A9;
+}
+.menu{
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #774d4d
+}
     </style>
 </head>
 <body>
-   <main>
+  <header>
     <nav class="menu">
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li class="dropdown">
-            <a href="#">Produtos</a>
-            <div class="dropdown-content">
-              <a href="#">Produto 1</a>
-              <a href="#">Produto 2</a>
-              <a href="#">Produto 3</a>
-            </div>
-          </li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <button><li><a href="#">Início</a></li></button>
+        <button><li><a href="#">Sobre</a></li></button>
+        <li class="dropdown">
+          <button><a href="#">Produtos</a></button>
+          <div class="dropdown-content">
+            <button><a href="#">Produto 1</a></button>
+            <button><a href="#">Produto 2</a></button>
+            <button><a href="#">Produto 3</a></button>
+          </div>
+        </li>
+        <button><li><a href="#">Contato</a></li></button>
+      </ul>
+    </nav>
+  </header>
+   <main>
+    
    </main>
     
     
