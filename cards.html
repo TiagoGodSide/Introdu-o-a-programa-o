@@ -54,14 +54,32 @@
             background-color: rgb(99, 83, 83);
         }
 
+        .card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card  img:not(:hover){
+            opacity:0.6 ;
+        }
+
+
     </style>
 </head>
 <body>
-  
-        
+    <header>
+        <form action="/enviar" method="post">
+            <label for="Login">Login</label>
+            <input type="text">
+            <br>
+            <label for="Senha">Senha</label>
+            <input type="password">
+            <h6>Esqueci a senha</h6>
+        </form>
+    </header>
         <div class="container">
             <div class="card">
-                <img src="Campo ruim1.jpg" alt="camporuim" width="250px">
+                <img src="Campo ruim1.jpg" alt="camporuim">
                 <div class="card-content">
                     <h3>Plano Básico</h3>
                     <p>Ideal para quem está começando. Recursos essenciais</p>
@@ -71,7 +89,7 @@
         </div>  
         <div class="container">
             <div class="card">
-                <img src="Campo ruim1.jpg" alt="Campo mediano" width="250px">
+                <img src="campo mediano1.jpg" alt="Campo mediano">
                 <div class="card-content">
                     <h3>Plano Plus</h3>
                     <p>Esse plano você já tem um pouco de grana</p>
@@ -81,7 +99,7 @@
         </div>
         <div class="container">
             <div class="card">
-                <img src="Campo ruim1.jpg" alt="Campo excelente" width="250px">
+                <img src="Campo excelente.jpg" alt="Campo excelente">
                 <div class="card-content">
                     <h3>Plano Avançado</h3>
                     <p>Bem rico você em rapaz, grana não é problema</p>
