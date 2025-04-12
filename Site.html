@@ -11,9 +11,9 @@
         <nav>
             <ul>
                 <li><a href="#Inicio">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Servicos">Serviços</a></li>
+                <li><a href="#contato">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -21,13 +21,54 @@
     <section id="Inicio" class="Ini-section">
         <h1>Bem vindo ao Provedor BraNet!!!</h1>
         <p>Códigos confiáveis para você!</p>
-        <a href="#" class="cta-buttons">Conheça nossos planos</a>
+        <a href="#Servicos" class="cta-buttons">Conheça nossos planos</a>
     </section>
     <!--Sessão Sobre-->
-    <section id="SObre" class="sobre-section">
+    <section id="Sobre" class="sobre-section">
         <h2>Sobre nós</h2>
         <p>Desde 2020 entregando a melhor internet para você e sua família</p>
         <p>Nossa maior missão é levar a inclusão digital até você</p>
     </section>
+    <!--Sessão de servições-->
+    <section id="Servicos" class="Serv-section">
+        <h2>Nossos serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Plano básico</h3>
+                <p>Ideal para lisos</p>
+                <p class="preco">R$49.90</p>
+            </div>
+            <div class="card">
+                <h3>Plano Intermediário</h3>
+                <p>Ideal para quem já tem um pouco mais de grana</p>
+                <p class="preco">R$79,90</p>
+            </div>
+            <div class="card">
+                <h3>Plano Avançado</h3>
+                <p>Ideal para quem tem a cédula</p>
+                <p class="preco">R$99,99</p>
+            </div>
+        </div>
+    </section>
+    <!--Sessão de Contatos-->
+    <Section id="contato">
+        <h2>Entre em contato conosco</h2>
+        <p>Preencha o formulário abaixo:</p>
+        <form action="Enviar" class="contato-form">
+            <label for="Nome">Nome:</label>
+            <input type="text" placeholder="Seu nome" required>
+
+
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Digite seu email" required>
+
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </Section>
+    <footer>&copy;2025 Tiago Cesar</footer>
 </body>
 </html>
